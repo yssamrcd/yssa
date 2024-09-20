@@ -17,8 +17,7 @@ body {
 }
 
 .main-heading {
-    animation: fadeIn 3s ease-in-out forwards; /* Use 'forwards' to retain the final state */
-}
+    animation: fadeIn 3s ease-in-out forwards; }
 
 .social-icons a {
     animation: fadeIn 5s ease-in-out forwards;
@@ -81,7 +80,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    background: url('images/kiss.jpg') no-repeat center center/cover;
+    background: url('./images/kiss.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -144,7 +143,7 @@ body {
 }
 
 .social-icons a:hover {
-    color: #ffa9da; /* Hover color for social media icons */
+    color: #ffa9da; 
 }
 
 /* Footer */
@@ -161,7 +160,7 @@ footer p {
 /* About Section Styling */
 .about {
     padding: 60px 20px;
-    background-color: #f9f9f9; /* Light background color */
+    background-color: #f9f9f9; 
 }
 
 .about .container {
@@ -232,7 +231,7 @@ footer p {
 /* About Section Cover Photo */
 .about .cover-header {
     height: 200px;
-    background-image: url('images/cover.jpg'); /* About cover image */
+    background-image: url('./images/cover.jpg'); /* About cover image */
     background-size: cover;
     background-position: center;
 }
@@ -335,7 +334,7 @@ footer p {
 /* Portfolio Section Cover Photo */
 .portfolio .cover-header {
     height: 200px;
-    background-image: url('images/cov1.jpg'); /* Portfolio cover image */
+    background-image: url('./images/cov1.jpg'); /* Portfolio cover image */
     background-size: cover;
     background-position: center;
 } /* Close the cover-header rule */
@@ -411,7 +410,7 @@ footer p {
 /* Skills Page Cover Photo */
 .skills-page .cover-header {
     height: 200px;
-    background-image: url('images/cov2.jpg'); /* Skills cover image */
+    background-image: url('./images/cov2.jpg'); /* Skills cover image */
     background-size: cover;
     background-position: center;
 }
