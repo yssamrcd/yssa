@@ -1,0 +1,492 @@
+/* General Styles */
+body {
+    font-family: 'Cormorant Garamond', serif;
+    color: #2b2424;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF8F6;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-heading {
+    animation: fadeIn 3s ease-in-out forwards; /* Use 'forwards' to retain the final state */
+}
+
+.social-icons a {
+    animation: fadeIn 5s ease-in-out forwards;
+}
+
+.sub-heading {
+    animation: fadeIn 8s ease-in-out forwards;
+}
+
+.tagline {
+    animation: fadeIn 10s ease-in-out forwards;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffd2e5;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #2a2323;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a:hover {
+    background-color: #ffa9da;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url('images/kiss.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b2e2e;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    z-index: 1;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin-right: 20px;
+}
+
+.profile-text {
+    max-width: 600px;
+}
+
+.brown-text {
+    color: #6b594a; /* Brown for 'Bonjour' */
+}
+
+.pink-text {
+    color: #e895b2; /* Dark Dusty Pink for 'Yssa!' */
+}
+
+.main-heading {
+    font-size: 3rem;
+}
+
+.sub-heading {
+    font-size: 1.10rem;
+    margin-top: 9px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 1px;
+    font-style: italic;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #332c2c;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffa9da; /* Hover color for social media icons */
+}
+
+/* Footer */
+footer {
+    background-color:  #ffd2e5;
+    padding: 20px 0;
+    color: #490027;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* About Section Styling */
+.about {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.about .container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.about h2 {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin-bottom: 20px; 
+    font-weight: bold; 
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
+}
+
+.about-image {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.about-text {
+    max-width: 800px; 
+    font-size: 1rem; 
+    color: #555; 
+    line-height: 1.6; 
+    margin: 0 auto; 
+    text-align: justified;
+}
+
+.about-text p {
+    margin-bottom: 20px; 
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ffa9da; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+.button:hover {
+    background-color: #ffa9da; 
+}
+
+/* Profile Page */
+.profile-page {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section Cover Photo */
+.about .cover-header {
+    height: 200px;
+    background-image: url('images/cover.jpg'); /* About cover image */
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-info {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-picture-container {
+    flex: 0 0 100px;
+    margin-right: 20px;
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.profile-username {
+    color: #666;
+}
+
+.profile-bio {
+    margin: 10px 0 0;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.stats-column {
+    text-align: center;
+}
+
+.stats-count {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.posts {
+    padding: 20px;
+}
+
+.post {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    padding: 10px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.post-username {
+    color: #666;
+    margin: 0;
+}
+
+.post-caption {
+    margin: 10px 0;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* Portfolio Section */
+
+/* Portfolio Section Cover Photo */
+.portfolio .cover-header {
+    height: 200px;
+    background-image: url('images/cov1.jpg'); /* Portfolio cover image */
+    background-size: cover;
+    background-position: center;
+} /* Close the cover-header rule */
+
+/* Profile Page */
+.profile-page {
+    padding: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture-container {
+    margin-right: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-details {
+    flex-grow: 1;
+}
+
+.explore-text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Posts Grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px; /* Optional spacing above the grid */
+}
+
+/* Post Styles */
+.post {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.post-caption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+/* Skills Page */
+.skills-page {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Skills Page Cover Photo */
+.skills-page .cover-header {
+    height: 200px;
+    background-image: url('images/cov2.jpg'); /* Skills cover image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.profile-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile-username {
+    color: #888;
+    margin: 5px 0;
+}
+
+.profile-bio {
+    font-size: 16px;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff8fc9, #c75f95);
+    margin: 20px 0;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color:  #ffd2e5;
+    color: #490027;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
